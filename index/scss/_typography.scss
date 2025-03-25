@@ -1,0 +1,72 @@
+h1 {
+    font-family: $font-primary;
+    font-weight: 900;
+    font-size: 32px; // Mobile size
+    margin: 30px 0;
+    
+    @media (min-width: $tablet) {
+        font-size: 38px;
+    }
+    
+    @media (min-width: $desktop) {
+        font-size: 45px;
+        margin: 40px 0;
+    }
+}
+
+h2 {
+    font-family: $font-primary;
+    font-weight: 600;
+    font-size: 28px; // Mobile size
+    margin: 20px 0;
+    
+    @media (min-width: $tablet) {
+        font-size: 32px;
+    }
+    
+    @media (min-width: $desktop) {
+        font-size: 37px;
+        margin: 24px 0;
+    }
+}
+
+h3 {
+    font-family: $font-primary;
+    font-weight: 200;
+    font-size: 24px; // Mobile size
+    margin: 24px 0;
+    
+    @media (min-width: $tablet) {
+        font-size: 28px;
+    }
+    
+    @media (min-width: $desktop) {
+        font-size: 32px;
+        margin: 32px 0;
+    }
+}
+
+overline {
+    font-size: 16px; // Mobile size
+    font-weight: 200;
+    color: #3E3D3D;
+    
+    @media (min-width: $desktop) {
+        font-size: 18px;
+    }
+}
+
+p {
+    font-size: 16px; // Mobile size
+    margin: 12px 0;
+    line-height: 160%;
+    
+    @media (min-width: $tablet) {
+        line-height: 180%;
+    }
+    
+    @media (min-width: $desktop) {
+        font-size: 18px;
+        line-height: 200%;
+    }
+}

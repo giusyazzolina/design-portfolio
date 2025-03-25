@@ -1,0 +1,146 @@
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: $background-light;
+    display: flex;
+    flex-direction: column; // Mobile: stacked layout
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(185, 185, 185, 0.1);
+    z-index: 1000;
+    
+    @media (min-width: $tablet) {
+        padding: 18px 60px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    @media (min-width: $desktop) {
+        padding: 20px 112px;
+    }
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    
+    @media (min-width: $tablet) {
+        text-align: left;
+        margin-bottom: 0;
+    }
+    
+    span {
+        display: block;
+        font-size: 16px;
+        font-weight: normal;
+        color: #3E3D3D;
+        
+        @media (min-width: $desktop) {
+            font-size: 18px;
+        }
+    }
+}
+
+/* Navigation */
+.nav {
+    width: 100%;
+    
+    @media (min-width: $tablet) {
+        margin-left: auto;
+        width: auto;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: column; // Mobile: stacked menu
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        
+        @media (min-width: $tablet) {
+            flex-direction: row;
+        }
+    }
+    
+    ul li {
+        margin: 5px 0;
+        
+        @media (min-width: $tablet) {
+            margin: 0 0 0 20px;
+        }
+    }
+    
+    ul li a {
+        font-family: $font-primary;
+        font-size: 16px;
+        text-decoration: none;
+        color: $text-color;
+        transition: color 0.3s;
+        padding: 5px;
+        display: block;
+        
+        @media (min-width: $tablet) {
+            padding: 0 12px;
+        }
+        
+        @media (min-width: $desktop) {
+            font-size: 18px;
+        }
+        
+        &:hover {
+            color: $hover-color;
+        }
+        
+        img {
+            width: 20px;
+            height: 20px;
+            
+            @media (min-width: $desktop) {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1001;
+    
+    @media (min-width: $tablet) {
+        display: none;
+    }
+    
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: $text-color;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+}
+
+/* Mobile Menu State */
+.nav-mobile {
+    display: none;
+    
+    &.active {
+        display: block;
+    }
+    
+    @media (min-width: $tablet) {
+        display: block;
+    }
+}

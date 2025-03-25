@@ -1,0 +1,19 @@
+{
+  "name": "sito_giusy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass index/scss/main.scss index/css/style.css --watch",
+    "build": "sass index/scss/main.scss index/css/style.css --style compressed",
+    "deploy": "git add . && git commit -m 'Update site' && git push origin main"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.86.0"
+  }
+}

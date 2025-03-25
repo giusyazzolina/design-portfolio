@@ -1,0 +1,101 @@
+/* About Page Styling */
+.main-content-grid {
+    padding: 20px;
+    
+    @media (min-width: $tablet) {
+        padding: 30px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    @media (min-width: $desktop) {
+        margin-left: 240px;
+        margin-right: 240px;
+    }
+}
+
+.padded-section {
+    padding: 20px 0;
+    
+    @media (min-width: $tablet) {
+        padding: 30px 0;
+    }
+    
+    @media (min-width: $desktop) {
+        padding: 40px 0;
+    }
+}
+
+/* Skills Box */
+.skills-box {
+    border-radius: 12px;
+    padding: 10px 0;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    
+    @media (min-width: $tablet) {
+        justify-content: flex-start;
+        gap: 12px;
+    }
+    
+    li {
+        background-color: #ECF3F4;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 16px;
+        font-family: $font-primary;
+        font-weight: 100;
+        
+        @media (min-width: $desktop) {
+            font-size: 18px;
+        }
+    }
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+    
+    @media (min-width: $tablet) {
+        flex-direction: row;
+    }
+}
+
+.gallery-image {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    
+    @media (min-width: $tablet) {
+        width: calc(50% - 8px);
+    }
+}
+
+.cv {
+    margin: 30px 0 60px 0;
+    
+    @media (min-width: $desktop) {
+        margin: 40px 0 80px 0;
+    }
+}
+
+/* Quote styling */
+blockquote {
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-left: 4px solid $accent-color;
+    
+    h3 {
+        margin: 10px 0;
+    }
+}

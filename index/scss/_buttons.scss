@@ -1,0 +1,51 @@
+/* Buttons */
+.btn {
+    display: inline-block;
+    border-radius: 400px;
+    padding: 10px 16px; // Mobile padding
+    font-size: 16px; // Mobile size
+    font-family: $font-primary;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 15px 0;
+    font-weight: lighter;
+    border: 1.5px solid $accent-color;
+    text-align: center;
+    color: #0F0F0F; // Forza il colore del testo a #0F0F0F per tutti i pulsanti
+    
+    @media (min-width: $tablet) {
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+    
+    @media (min-width: $desktop) {
+        padding: 12px 20px;
+        font-size: 18px;
+        margin: 20px 0;
+    }
+}
+
+.btn-primary {
+    background-color: $accent-color;
+    border: 1.5px solid $accent-color;
+    color: #0F0F0F !important; // Forza il colore del testo a #0F0F0F con !important
+    
+    &:hover {
+        background-color: #F9FBFC;
+        border: 1.5px solid $accent-color;
+        color: #0F0F0F !important; // Mantieni il testo #0F0F0F durante l'hover
+    }
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1.5px solid $accent-color;
+    color: #0F0F0F; // Forza il colore del testo a #0F0F0F
+    font-weight: normal;
+    
+    &:hover {
+        background-color: $accent-color;
+        border: 1.5px solid $accent-color;
+        color: #0F0F0F; // Mantieni il testo #0F0F0F durante l'hover
+    }
+}

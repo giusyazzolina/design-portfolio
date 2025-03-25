@@ -1,0 +1,27 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-secondary;
+    color: $text-color;
+    background-color: #FEFEFE;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+    transition: color 0.3s;
+    
+    &:hover {
+        color: $hover-color;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
