@@ -64,6 +64,12 @@ textarea {
         display: flex;
         flex-direction: column;
         gap: 8px;
+        width: 100%; /* Assicura che la larghezza sia 100% su mobile */
+        
+        @media (min-width: $desktop) {
+            width: 48%; /* Stesso dimensionamento della versione tablet */
+            min-width: 200px; /* Dimensione minima per evitare caselle troppo strette */
+        }
         
         label {
             margin-bottom: 8px;
