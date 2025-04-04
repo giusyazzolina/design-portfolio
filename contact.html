@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Giusy Azzolina</title>
     <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Neue+Plak:wght@400&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400&display=swap" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- EmailJS Library -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Contact Giusy Azzolina - UX/UI Designer">
+    <meta name="description" content="Contatta Giusy Azzolina, UX/UI Designer">
     <meta property="og:description" content="Get in touch with me for collaborations, projects, or just to say hello!">
-    <meta property="og:image" content="img/og-image.jpg">
+    <meta property="og:image" content="assets/img/og-image.jpg">
     <meta property="og:url" content="https://giusyazzolina.github.io/contact.html">
     <meta property="og:type" content="website">
     <!-- LinkedIn specific Open Graph tags -->
@@ -28,10 +29,10 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="logo">giusy azzolina <span>ux ui designer</span></div>
+        <a href="index.html" class="logo">giusy azzolina <span>ux ui designer</span></a>
         
         <!-- Mobile Menu Toggle -->
-        <div class="menu-toggle">
+        <div class="menu-toggle" aria-label="Toggle mobile menu">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
@@ -43,7 +44,7 @@
                 <li><a href="index.html#projects">Projects</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://www.linkedin.com/in/giusy-azzolina" target="_blank" rel="noopener" property="og:see_also"><img src="img/icon-linkedin.png" alt="LinkedIn"></a></li>
+                <li><a href="https://www.linkedin.com/in/giusy-azzolina" target="_blank" rel="noopener" property="og:see_also"><img src="assets/img/icon-linkedin.png" alt="LinkedIn"></a></li>
             </ul>
         </nav>
     </header>
@@ -65,7 +66,7 @@
                         <div class="contact-info">
                             <h2>E-mail</h2>
                             <p>giusyazzolina.ux@gmail.com</p>
-                            <a href="https://www.linkedin.com/in/giusy-azzolina" target="_blank" rel="noopener" property="og:see_also"><img src="img/icon-linkedin.png" alt="LinkedIn"></a>
+                            <a href="https://www.linkedin.com/in/giusy-azzolina" target="_blank" rel="noopener" property="og:see_also"><img src="assets/img/icon-linkedin.png" alt="LinkedIn"></a>
                         </div>
                     </div>
                 </div>
@@ -78,7 +79,7 @@
 
                             <div class="form-group">
                                 <label for="message"><span class="required">*</span> <strong>Message</strong></label>
-                                <textarea id="message" name="message" required maxlength="240" placeholder="Write your message here..."></textarea>
+                                <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
                             </div>
                             
                             <p>Best,</p>
@@ -122,8 +123,8 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
     <!-- EmailJS Integration Script -->
-    <script src="js/contact.js"></script>
+    <script src="assets/js/contact.js"></script>
 </body>
 </html>
