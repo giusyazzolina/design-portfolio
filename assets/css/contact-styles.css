@@ -1,0 +1,19 @@
+/* Stili aggiuntivi per il form di contatto */
+
+/* Mantenere lo stile esistente per mobile/tablet */
+.contact-form textarea::placeholder {
+  /* Stili originali mantenuti */
+}
+
+/* Stile per desktop: allargare e allineare il placeholder */
+@media (min-width: 992px) { 
+  .contact-form textarea {
+    width: 100%; /* Garantisce che il campo abbia la stessa larghezza degli altri */
+  }
+  
+  .contact-form textarea::placeholder {
+    /* Assicura che il placeholder sia allineato con gli altri */
+    padding-left: 0; /* Rimuove eventuali padding a sinistra */
+    padding-right: 0; /* Rimuove eventuali padding a destra */
+  }
+}
